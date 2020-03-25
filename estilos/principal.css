@@ -1,0 +1,251 @@
+@charset "UTF-8";
+/*Estilos del form login y registro */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-size: cover;
+  /*Flexbox */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-size: 400% 300%;
+  animation: BgGradient 5s ease infinite; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s; }
+
+.contenedor {
+  width: 100%;
+  padding: 15px; }
+
+.formulario {
+  background: #fff;
+  margin-top: 150px;
+  padding: 3px; }
+
+h1 {
+  text-align: center;
+  color: #1a2537;
+  font-size: 40px; }
+
+input[type="text"],
+input[type="password"] {
+  font-size: 20px;
+  width: 82%;
+  padding: 10px;
+  border: none; }
+
+.input-contenedor {
+  margin-bottom: 15px;
+  border: 1px solid #aaa; }
+
+.icon {
+  min-width: 50px;
+  text-align: center;
+  color: #999; }
+
+.button {
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background: #1a2537;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.button2 {
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  background: #1a2537;
+  padding: 10px 209px;
+  border-radius: 5px;
+  cursor: pointer; }
+
+.button:hover {
+  background: cadetblue; }
+
+p {
+  text-align: center; }
+
+.link {
+  text-decoration: none;
+  color: #1a2537;
+  font-weight: 600; }
+
+.link:hover {
+  color: cadetblue; }
+
+@media(min-width:768px);
+.formulario {
+  margin: auto;
+  width: 500px;
+  margin-top: 150px;
+  border-radius: 2%;
+  /*Animaciónfondo- Background con flexbox */ }
+
+@keyframes BgGradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+.contenedor1 {
+  background: #ccc;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  /* Flexbox */
+  display: flex;
+  flex-flow: row wrap; }
+
+body {
+  background-image: url(../imagenes/fondo1.jpg); }
+
+header {
+  /*background:#2c3e50; */
+  background-image: url(../imagenes/playa.jpg);
+  width: 100%;
+  padding: 20px;
+  /* Flexbox */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+header .logo {
+  color: #fff;
+  font-size: 30px; }
+
+header .logo img {
+  width: 180px;
+  vertical-align: top;
+  /*Formato texto Costa Rica */ }
+
+header .logo a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 50px;
+  font-size: 30px;
+  text-shadow: -2px -2px 1px blue; }
+
+header nav {
+  width: 50%;
+  /* Flexbox */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+
+header nav a {
+  background: cadetblue;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  /* Flexbox */
+  flex-grow: 1;
+  /* Animación */ }
+
+header nav a:hover {
+  background: #e74c3c;
+  box-shadow: 0px 5px 0px;
+  border-radius: 15px; }
+
+.main {
+  background-image: url(../imagenes/fondo.jpg);
+  padding: 20px;
+  /*flex:1 1 70%; */
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 70%; }
+
+aside {
+  background: cadetblue;
+  padding: 20px;
+  /* flex:1 1 30%; */
+  flex: 1;
+  flex-shrink: 1;
+  flex-basis: 30%;
+  /*flex:0 0 300px; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start; }
+
+aside .widget {
+  background-image: url(../imagenes/logo1.png);
+  height: 150px;
+  margin: 10px; }
+
+aside .widget1 {
+  background-image: url(../imagenes/img3.jpg);
+  height: 150px;
+  margin: 10px; }
+
+footer {
+  width: 100%;
+  padding: 20px;
+  height: 50px;
+  top: 80px;
+  background: black;
+  color: white;
+  position: relative;
+  /* Flexbox */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: inline-block;
+  text-align: center; }
+
+@media screen and (max-width: 800px) {
+  .contenedor {
+    flex-direction: column; }
+
+  header {
+    flex-direction: column;
+    padding: 0; }
+
+  header .logo {
+    margin: 20px 0; }
+
+  header nav {
+    width: 100%; }
+
+  aside {
+    flex-direction: row;
+    flex: 0; }
+
+  aside .widget {
+    flex-grow: 1; } }
+@media screen and (max-width: 600px) {
+  aside {
+    flex-direction: column; }
+
+  footer {
+    justify-content: space-around; } }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-size: 400% 300%;
+  animation: BgGradient 5s ease infinite; }
+
+/*# sourceMappingURL=principal.css.map */

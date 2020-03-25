@@ -1,0 +1,47 @@
+7 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form id="login" action=" protegido.html" method="POST">
+<div>
+    <input type="text" id="user" placeholder="Escribe tu usuario" requiered>
+</div>
+<div>
+    <input type="password" id="pass" placeholder="Escribe tu usuario" requiered>
+</div>
+<div>
+    <input type="submit" id="enviar">
+</div>
+</form> 
+<script>
+     var d = document
+     function crearSesion(evento){
+         evento.preventDefaul()
+         var user = d.querySelector('#user'),
+             pass = d.querySelector('#pass'),
+
+             if(user == 'bextlan' && pass =='javascript'){
+
+                 sessionStorage.setItem('nombre', user)
+                 window.location.href= 'protegido.html'
+             }
+             else{
+                alerta('Datos incorrectos') 
+                evento.target.reset()
+             }
+
+     }
+    function iniciarSesion() {
+        var login = d.querySelector('#login')
+        login.onsubmit = crearSesion
+}
+
+window.onload = iniciarSesion
+
+</script>   
+</body>
+</html>

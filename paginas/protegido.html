@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <p>Hola <mark id="autenticado"></mark> Estás en una página protegida
+    </p>
+    <p>
+        <a id ="logout" href="">Salir de la Sesión</a>
+    </p>
+    <script>
+        var d = document
+
+        function obtenerSesion(){
+            var nombre = sessionStorage.getItem('nombre')
+            d.querySelector('#autenticado')
+        }
+        window.onload=obtenerSesion
+    </script>
+    
+</body>
+</html>

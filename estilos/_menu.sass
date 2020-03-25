@@ -1,0 +1,135 @@
+.contenedor1 
+    background: #ccc
+    width: 90%
+    max-width: 1000px
+    margin: auto
+    /* Flexbox */
+    display: flex
+    flex-flow: row wrap
+
+body 
+    background-image: url(../imagenes/fondo1.jpg)
+   
+header 
+    /*background:#2c3e50;*/
+    background-image: url(../imagenes/playa.jpg)
+    width: 100%
+    padding: 20px
+    /* Flexbox */
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-direction: row
+    flex-wrap: wrap
+
+header .logo 
+    color: #fff
+    font-size: 30px
+
+header .logo img 
+    width: 180px
+    vertical-align: top
+    
+    /*Formato texto Costa Rica*/
+header .logo a 
+    color: #fff
+    text-decoration: none
+    line-height: 50px
+    font-size: 30px
+    text-shadow: -2px -2px 1px blue
+
+header nav 
+    width: 50%
+    /* Flexbox */
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+
+header nav a 
+    background: cadetblue
+    color: #fff
+    text-align: center
+    text-decoration: none
+    padding: 10px
+    /* Flexbox */
+    flex-grow: 1
+    /* Animación*/
+header nav a:hover 
+    background: #e74c3c
+    box-shadow: 0px 5px 0px 
+    border-radius: 15px
+
+.main 
+    background-image: url(../imagenes/fondo.jpg)
+    padding: 20px
+    /*flex:1 1 70%;*/
+    flex: 1
+    flex-shrink: 1
+    flex-basis: 70%
+    
+aside 
+    background: cadetblue
+    padding: 20px
+    /* flex:1 1 30%;*/
+    flex: 1
+    flex-shrink: 1
+    flex-basis: 30%
+    /*flex:0 0 300px;*/
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: flex-start
+
+aside .widget 
+    background-image: url(../imagenes/logo1.png)
+    height: 150px
+    margin: 10px
+
+aside .widget1 
+    background-image: url(../imagenes/img3.jpg)
+    height: 150px
+    margin: 10px
+   
+footer 
+    width: 100%
+    padding: 20px
+    height: 50px
+    top: 80px
+    background: black
+    color: white
+    position: relative
+    /* Flexbox */
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    display: inline-block
+    text-align: center
+ 
+@media screen and (max-width: 800px) 
+    .contenedor 
+        flex-direction: column
+    
+    header 
+        flex-direction: column
+        padding: 0
+    
+    header .logo 
+        margin: 20px 0
+    
+    header nav 
+        width: 100%
+    
+    aside 
+        flex-direction: row
+        flex: 0
+    
+    aside .widget 
+        flex-grow: 1
+ 
+@media screen and (max-width: 600px) 
+    aside 
+        flex-direction: column
+    
+    footer 
+        justify-content: space-around
+    

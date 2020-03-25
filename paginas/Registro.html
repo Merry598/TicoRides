@@ -3,51 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos//styles.css">
-    <title>Registro</title>
+    <link rel="stylesheet" href="../estilos/principal.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" >
+    <title>Register</title>
 </head>
 <body>
-    <header>
 
-        <div id="contenedor ">
-            <img src="imagenes/fondo.jpg" class="fondo" alt="">
-           
-        </div>
+      
 
-        <nav >
-            <ul>
-               <li ><a href="../index.html">Home</a></li>
-               <li ><a href="Login.html.html">Login</a></li>
-               <li ><a href="Registro.html.html">Registro</a></li>
-             </ul>
-           </nav> 
-             
-       </header>
        <form class="formulario">
     
-        <h1>Registrate</h1>
+        <h1>Register</h1>
          <div class="contenedor">
          
          <div class="input-contenedor">
              <i class="fas fa-user icon"></i>
-             <input type="text" placeholder="Nombre Completo">
-             
+             <input type="text" placeholder="First Name">
+             </div>
+
+             <div class="input-contenedor">
+             <i class="fas fa-user icon"></i>
+             <input type="text" placeholder="Last Name">
+             </div>
+
+             <div class="input-contenedor">
+             <i class="fas fa-phone alt icon"></i>
+             <input type="text" placeholder="Phone">
              </div>
              
              <div class="input-contenedor">
              <i class="fas fa-envelope icon"></i>
-             <input type="text" placeholder="Correo Electronico">
-             
+             <input type="text" placeholder="Email">
              </div>
-             
+
              <div class="input-contenedor">
-            <i class="fas fa-key icon"></i>
-             <input type="password" placeholder="Contraseña">
-             
+             <i class="fas fa-user-circle icon"></i>
+             <input type="text" placeholder="Username">
              </div>
-             <input type="submit" value="Registrate" class="button">
-             <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
-             <p>¿Ya tienes una cuenta?<a class="link" href="loginvista.html">Iniciar Sesion</a></p>
+
+             <div class="input-contenedor">
+             <i class="fas fa-key icon"></i>
+             <input type="password" placeholder="Password">
+             </div>
+
+             <div class="input-contenedor">
+             <i class="fas fa-lock icon"></i>
+             <input type="password" placeholder="Repeat Password">
+             </div>
+
+
+             <input type="submit" value="Register" class="button">
+             <p>By clicking Register,you agree on our terms and condition.</p>
+             <p>¿Do you already have an account?<a class="link" href="Login.html">Sign In</a></p>
          </div>
         </form>
     
