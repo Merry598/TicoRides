@@ -7,39 +7,84 @@
     <title>Rides</title>
 </head>
 <body>
-    <main>
-<div class="container3">
 
-    
-<table id="tablamyride2" >
-    <tr>
-        <td><a href="Dashboard.html">Dashboard</a></td>
-        <td><a href="Rides.html">Rides</a></td>
-        <td><a href="Settings.html">Settings</a></td>
+    <header>
+        <div id="info">
+            <p id="letra1">88-27-72-27
+            <img id="imagen1" src="imagenes/tel.png" alt="" width="30px" height="30px">
+        </p>
+            <p id="letra2">info@ticoridecostarica.com
+                    <img src="imagenes/correo.png" alt="" width="30px" height="30px">
+            </p>
+      </div>
+        <nav >
+         <ul>
+             
+           <li ><a href="Dashboard.html">Dashboard</a></li>
+           <li><a href="Search Rides.html">Search Rides</a></li>
+           <li ><a href="Rides.html">My Rides</a></a></li>
+           <li ><a href="Settings.html">Setting</a></li>
+           
+        </ul>
+           </nav>   
+       </header>
+<section>
+<fieldset>
+    <div class="conterides">
+        <div class="formrides">
+            <div>
+                <label for="Ride Name">Ride Name: </label>
+                <input type="text" placeholder="" class="textos" name="">
+            </div>
 
-    </tr>
-</table>
+            <div class="formrides">
+            <label for="Start From">Start From: </label>
+            <input type="text" placeholder="" class="textos" name="">
+        </div>
 
-    </main>
- 
 
-    <div class="bienve" >
-        <p class="wel">Welcome </p><p class="name"> barroyo</p>
+        <label for="Description" > Description: </label>
+               <input type="text" name=""  class="Description" placeholder="">
+           </div>
+    </div>  
+    <h2>When</h2>
+
+    <div class="formrides">
+        <label for="Departure">Departure: </label>
+        <input type="text" placeholder="6:45am" class="textos" name="6:45am">
     </div>
 
-</div>
-<h1>Solicite Su Ride.</h1><form name="frmformulario" id="idformulario", method="GET" autocomplete="off" ></form>
-<section>
+    <div class="formrides">
+        <label for="Estimated Arrival">Estimated Arrival: </label>
+        <input type="text" placeholder="7:05am" class="textos" name="7:05am">
+    </div>
+    <hr>
+    <h3>Select Days:</h3>
+    <input type="checkbox" name="day" checked>Monday<br>
+    <input type="checkbox" name="day" checked>Tuesday<br>
+    <input type="checkbox" name="day" checked>Wednesday<br>
+    <input type="checkbox" name="day" checked>Friday<br>
+    <input type="checkbox" name="day" checked>Sunday<br>
+<hr>
 
-    
-        <div class="form-group">
-           
-                <input type="text" name="Ride Name" placeholder="Ride Name" class="input__text" >
+<input type="submit" value="Save">
 
-
-   
-</div>
+        </fieldset>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

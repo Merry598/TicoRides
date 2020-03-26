@@ -1,0 +1,98 @@
+body 
+    font-family: Arial, Helvetica, sans-serif
+    margin: 0
+    /*background-size: cover*/
+    /*Flexbox*/
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: bold
+    /*background-size: 400% 300%*/
+    /*animation: BgGradient 5s ease infinite*/ 
+    
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    transition: .5s
+    /*--Formato del titulo--*/
+    
+.header2 nav
+    overflow: hidden
+    
+    /*Formato botones-lista menú navegación*/
+.header2 nav ul li
+    list-style: none
+    float: left
+
+    /*Formato texto-menú navegación*/
+.header2 nav ul li a 
+    /*padding: 10px 10px*/
+    /*margin: 10px 10px*/
+    font-size: 20px
+    text-decoration: none
+    /*background: #3BA7E1*/
+    color: white
+    /*display: block*/
+     /*box-shadow: 0px 5px 0px #1D64A6*/
+    border-radius: 15px
+    margin: 114
+    padding: -4
+
+.titulo
+    text-align: center
+    font-size: 20px
+    font-family: arial
+    margin-top: 20px
+    color: blue
+    text-shadow:  0px 0px 6px black
+    position: relative
+/*----Formato correo electronico y # teléfono---*/
+#info
+
+    color: white
+    font-size: 20px 
+
+#letra1
+
+    margin-top: -15px
+    padding-left: 1000px
+
+#letra2
+
+    margin-top: -1px
+    padding-left: 1012px
+       
+     
+/*Formato Tabla*/   
+.table 
+    font: 20px Verdana, Geneva, Arial 
+    padding: 30px
+
+    .col
+        width: 150px
+    
+    .th td   
+        padding: 5px
+
+    .thead tr
+        border: 1px solid  #B10DC9
+
+    .th 
+        font-weight: bold
+
+    .tbody tr hover
+        background-color: orange
+
+
+@media screen and (max-width: 600px) 
+    .header2
+        flex-direction: column
+        padding: 0
+        display: flex
+        align-content: flex-start
+        flex-wrap: wrap
+        
+    .header2 nav 
+        width: 100%
+     

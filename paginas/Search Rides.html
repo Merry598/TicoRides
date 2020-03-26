@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../estilos/principal.css">
-    <title>Dashboard</title>
+    <title>Search Rides</title>
 </head>
 <body>
     
@@ -21,69 +21,74 @@
         </div>
         <nav >
          <ul>
-            <li ><a href="Dashboard.html">Dashboard</a></li>
+        <li ><a href="Dashboard.html">Dashboard</a></li>
             <li><a href="Search Rides.html">Search Rides</a></li>
-           <li ><a href="Rides.html">My Rides</a></a></li>
-           <li ><a href="Settings.html">Setting</a></li>
+            <li><a href="Rides.html">My Rides</a></a></li>
+           <li><a href="Settings.html">Setting</a></li>
         </ul>
         </nav>  
 </header>
-   
+   <section>
+    <form action="">
 
-   <div class=titulo3></div><br>
-   <h1>My Rides:</h1><br>
+        <fieldset>
+            <legend>Search for a Ride</legend>
+
+        <div class="contenedor">
+        <div class="form-group">
+            <label for="from">From: </label>
+            <input type="text" placeholder="Input text" class="textos" name="from">
+        </div>
+ 
+
+        <div class="contenedor">
+        <div class="form-group">
+        <label for="to">To: </label>
+    <input type="text" placeholder="Input text" class="textos" name="to">
+    </div>
+
+    <input type="submit" id="Find my Ride!" value="Find my Ride!" class="btnaceptlo">
+    </div>
+</div> 
+        </fieldset>
+    </form>
+
+   </section>
+
+   <div class=titulo2></div><br>
+   <h1>Result for Rides that match your criteria:</h1><br>
 
    <table width= "1000px" border= "1px" align="center">
-       <colgroup>
-        <col id="Name"/>
-        <col id="Start"/>
-        <col id="End"/>
-        <col id="Actions"/>
-       
-    </colgroup>
     <thead>
     <tr height="50px" align="center">
-        <th>Name</th>
+        <th>User</th>
         <th>Start</th>
         <th>End</th>
-        <th>Actions</th>
-    </tr>
-</thead>
-<tbody>
-    <tr height="50px" align="center">
-        <td>Brete</td>
-        <td>Barrio Los Angeles</td>
-        <td>Ciudad Quesada</td>
-        <td>Edit-Delete</td>
+        <th>   </th>
+    </thead>
     </tr>
 
     <tr height="50px" align="center">
-        <td>Casa</td>
+        <td>barroyo</td>
+        <td>Barrio Los Ángeles</td>
         <td>Ciudad Quesada</td>
-        <td>Los Angeles</td>
-        <td>Edit.Delete</td>
-       
+        <td>View</td>
     </tr>
 
     <tr height="50px" align="center">
-        <td>Oficina Chepe</td>
+        <td>barroyo</td>
+        <td>Ciudad Quesada</td>
+        <td>Los Ángeles</td>
+        <td>View</td>
+    </tr>
+
+    <tr height="50px" align="center">
+        <td>yluna</td>
         <td>Ciudad Quesada</td>
         <td>San Pedro</td>
-        <td>Edit-Delete</td>
+        <td>View</td>
     </tr>
-    </tbody>
-  </table>
   
-   <!--<footer class="contrafooter">
-    <p>2020 derechos reservados | www.infoticoridecostarica.com | aviso 
-        legal y privacidad
-    </p>
-</footer>-->
-       
-
-
+  </table>
 </body>
 </html>
-
-
-

@@ -3,24 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documento Protegido con sessionStorage</title>
 </head>
 <body>
+    <h1>Documento Protegido con sessionStorage</h1>
+    
 
-
-    <p>Hola <mark id="autenticado"></mark> Estás en una página protegida
-    </p>
+    <p>Hola <mark id="autenticado"></mark> Estás en una página protegida con 
+        sessionStorage</p>
     <p>
-        <a id ="logout" href="">Salir de la Sesión</a>
+        <a id ="logout" href="#">Salir de la Sesión</a>
     </p>
     <script>
         var d = document
 
         function obtenerSesion(){
             var nombre = sessionStorage.getItem('nombre')
-            d.querySelector('#autenticado')
+            d.querySelector('#autenticado').innerHTML = nombre
+        return(nombre === null || nombre === undefined)?window.location.href='session-storage.html':false
+        
         }
-        window.onload=obtenerSesion
+        d.querySelector('#logout').onclick = fuction () {
+            sessionStorage.clear()
+            windowlocation.href = 'session-storage.html'
+        }
+        window.onload = obtenerSesion
     </script>
     
 </body>

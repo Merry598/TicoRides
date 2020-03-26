@@ -1,17 +1,19 @@
-7 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ejemplo de sessionStorage</title>
+    
 </head>
 <body>
+    <h1>Ejemplo de sessionStorage</h1>
 <form id="login" action=" protegido.html" method="POST">
-<div>
+<div> 
     <input type="text" id="user" placeholder="Escribe tu usuario" requiered>
 </div>
 <div>
-    <input type="password" id="pass" placeholder="Escribe tu usuario" requiered>
+    <input type="password" id="pass" placeholder="Escribe tu password" requiered>
 </div>
 <div>
     <input type="submit" id="enviar">
@@ -21,13 +23,15 @@
      var d = document
      function crearSesion(evento){
          evento.preventDefaul()
-         var user = d.querySelector('#user'),
-             pass = d.querySelector('#pass'),
+         var user = d.querySelector('#user').value,
+             pass = d.querySelector('#pass').value
 
-             if(user == 'bextlan' && pass =='javascript'){
+            console.log (user, pass)
 
-                 sessionStorage.setItem('nombre', user)
-                 window.location.href= 'protegido.html'
+        if(user == 'bextlan' && pass =='javascript'){
+
+                sessionStorage.setItem('nombre', user)
+                window.location.href= 'protegido.html'
              }
              else{
                 alerta('Datos incorrectos') 
